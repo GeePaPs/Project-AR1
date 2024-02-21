@@ -50,21 +50,23 @@
 
 /*adding a sticky note*/
 .sticky-note {
-    position: relative; /* Make it relative for absolute positioning of pseudo-elements */
+    /* Make it relative for absolute positioning of pseudo-elements */
     border: 2px solid #ffcc00; /* Yellow border */
-    background-color: #ffff99; /* Light yellow background */
-    width: 10%; /* Adjust width as needed */
-    margin: 20px auto; /* Center the sticky note horizontally */
-    padding: 20px; /* Padding inside the sticky note */
+    background-color: #ffff99; /* Light yellow background */ 
     border-radius: 10px; /* Rounded corners */
-    font-size: 32px; /* Adjust text size as needed */
+    font-size: 24px; /* Adjust text size as needed */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
     text-align: center; /* Center-align the text */
     line-height: 1.5; /* Adjust line height for spacing */
-    overflow: hidden; /* Hide overflow content */
     font-family: "Single Day", cursive;
     font-weight: 400;
-    font-style: normal;
+    padding: 8px 16px;
+    margin: 16px 0 8px 0;
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -101,41 +103,41 @@
 
 
 
-/*Adding Categories*/
-.categories {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    align-items: center; /* Align items vertically */
-    padding: 20px; /* Example padding */
-}
-.categories-line {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    margin-bottom: 40px; /* Add space between lines */
-}
 .category-item {
     display: flex;
     flex-direction: column;
     align-items: center; /* Align items vertically */
     margin-bottom: 0;
+    gap: 4px;
+    padding: 8px ;
+    border-radius: 8px;
  }
+
  .category-item img {
-    width: 299;
-    height:86 ;
+    width: 39px;
+    height:44 ;
     margin-right: 10px;
  }
+
  .category-item span {
-    font-size: 20px; /* Adjust text size as needed */
+    font-size: 16px; /* Adjust text size as needed */
     text-decoration: none;
     color: blue;
  }
+
+ .category-item p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+ }
+
  .category-item a {
     text-decoration: none;
  }
  .category-item a:hover span {
     color: rgb(9, 2, 97);
-    font-size: 24px;
  }
+
  .paragraph{
     display: flex;
     flex-direction: column; /* Display items in a column */
@@ -152,7 +154,9 @@
  .post-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 24px;
+    padding: 8px 8px;
+    box-sizing: border-box;
 }
 
 .post-card {

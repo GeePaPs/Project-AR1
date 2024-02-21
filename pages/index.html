@@ -23,41 +23,45 @@
         <input type="text" class="search-box" placeholder="Search...">
         <button type="submit" class="search-button">Search</button>
             </div>
-        <!-- Add a new page link -->
-        <a href="/pages/newpage.html" class="new-page-link">
-            <img src="/icons/icons8-single-page-mode-48.png" alt="Add a new page" class="add-new-page-icon">
-            <p class="newpage">AddNew-Page</p>
-        </a>
-        <!-- Add a random page link -->
-        <a href="/posts/brainydictionary.html" class="random-page-link">
-            <img src="/icons/icons8-dice-50.png" alt="Add a new page" class="add-new-page-icon">
-            <p class="randompage">Random-Page</p>
-        </a>
+        <!-- Add a new page links -->
+        <!--wrapper-->
+        <div class="new-page-links-wrapper">
+            <a href="/pages/newpage.html" class="new-page-link">
+                <img src="/icons/icons8-single-page-mode-48.png" alt="Add a new page" class="add-new-page-icon">
+                <p class="newpage">AddNew-Page</p>
+            </a>
+            <!-- Add a random page link -->
+            <a href="/posts/brainydictionary.html" class="random-page-link">
+                <img src="/icons/icons8-dice-50.png" alt="Add a new page" class="add-new-page-icon">
+                <p class="randompage">Random-Page</p>
+            </a>
+        </div>
     </div>
-        </div><br>
     </header>
-    <div class="sticky-note" id="categories">
-    Categories
-</div>
+
+
+    <div class="section-title">
+        <div class="sticky-note">Categories</div>
+    </div>
     <div class="categories">
         <div class="category-item">
-        <img src="/images/icons8-media-64.png" alt="BrainyMedia">
-        <a href="#"><span>BrainyMedia</span></a>
-        <p>Free Media Source</p>
-    </div>
-    <div class="category-item">
-        <img src="/images/icons8-quotes-94.png" alt="BrainyQuotes">
-        <a href="#"> <span>BrainyQuotes</span></a>
-        <p>Free Quote</p>
-    </div>
-    <div class="category-item">
-        <img src="/images/icons8-cs-64.png" alt="BrainyFunctions">
-        <a href="#"><span>BrainyFunctions</span></a>
-        <p>Free Function Library</p>
-    </div>
-    </div>
+            <img src="/images/icons8-media-64.png" alt="BrainyMedia">
+            <a href="#"><span>BrainyMedia</span></a>
+            <p>Free Media Source</p>
+        </div>
 
-    <div class="categories-line">
+        <div class="category-item">
+            <img src="/images/icons8-quotes-94.png" alt="BrainyQuotes">
+            <a href="#"> <span>BrainyQuotes</span></a>
+            <p>Free Quote</p>
+        </div>
+        
+        <div class="category-item">
+            <img src="/images/icons8-cs-64.png" alt="BrainyFunctions">
+            <a href="#"><span>BrainyFunctions</span></a>
+            <p>Free Function Library</p>
+        </div>
+
         <div class="category-item">
             <img src="/images/icons8-news-64.png" alt="BrainyMedia">
             <a href="#"><span>BrainyNews</span></a>
@@ -74,10 +78,14 @@
             <p>Free Dictionary</p>
         </div>
     </div>
-     <div class="sticky-note" id="categories">
-    Posts
+
+    <div class="section-title">
+        <div class="sticky-note" id="categories">
+            Posts
+        </div>
     </div>
-    <hr>
+     
+ 
 
     <!--Adding Cards as posts-->
     <div class="post-container">
@@ -88,8 +96,8 @@
             <p class="post-description">Discombobulated</p>
             <a href="/posts/brainydictionary.html" class="read-more">Read More</a>
         </div>
-    </div>
-    <!-- Repeat for other posts -->
+    </div> 
+    
     <div class="post-card">
         <div class="post-image" style="background-image: url('/images/business-3d-stack-of-different-books.png');"></div>
         <div class="post-details">
@@ -97,8 +105,8 @@
             <p class="post-description">Lecture Three Slides</p>
             <a href="/posts/brainybooks.html" class="read-more">Read More</a>
         </div>
-    </div>
-    <!-- Repeat for other posts -->
+    </div> 
+    
     <div class="post-card">
         <div class="post-image" style="background-image: url('/images/icons8-news-64.png');"></div>
         <div class="post-details">
@@ -107,28 +115,26 @@
             <a href="/posts/brainymedia.html" class="read-more">Read More</a>
         </div>
     </div>
-</div>
-<!--Adding Cards as posts-->
-    <div class="post-container">
-    <div class="post-card">
+
+     <div class="post-card">
         <div class="post-image" style="background-image: url('/images/lettering-lettering-love-is-in-the-air-with-stars-and-clouds-text-1.png');"></div>
         <div class="post-details">
             <h2 class="post-title">Quote Of  The Day!</h2>
             <p class="post-description">Love No Matter What</p>
             <a href="/posts/brainyquote.html" class="read-more">Read More</a>
         </div>
-    </div>
-    <!-- Repeat for other posts -->
-    <div class="post-card">
+    </div> 
+
+     <div class="post-card">
         <div class="post-image" style="background-image: url('/images/shine-chalk-board-with-textbooks-and-ruler-for-math-lesson-1.png');"></div>
         <div class="post-details">
             <h2 class="post-title">Exploring Functions </h2>
             <p class="post-description">Functions Can be ...</p>
             <a href="/posts/brainyfuction.html" class="read-more">Read More</a>
         </div>
-    </div>
-    <!-- Repeat for other posts -->
-    <div class="post-card">
+    </div> 
+    
+     <div class="post-card">
         <div class="post-image" style="background-image: url('/images/smart-social-media-marketing-and-metrics.png');"></div>
         <div class="post-details">
             <h2 class="post-title">Connecting To The Web</h2>
@@ -138,9 +144,10 @@
     </div>
 </div>
 
+
 <hr style="opacity: 0.5;">
 <footer>
-    <h6 style="text-align: center;">All Rights Reserved Project 1R1</h6>
+    <h6 style="text-align: center;">All Rights Reserved Project 1R1 &copy;2024</h6>
 </footer>
 
 </body>

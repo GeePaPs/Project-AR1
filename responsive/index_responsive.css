@@ -1,18 +1,33 @@
-/* Media Queries for responsiveness */
 
-/* Mobile */
-@media only screen and (max-width: 600px){
+/* General styles for all screen sizes */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 100%;
+    max-width: 1300px;
+}
+
 /* Styling The Header components*/
 .header {
     display: flex;
-    display: block;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 32px;
 }
 
 .sitelogo {
     max-width: 240px; /* Adjust max-width as needed */
     height: 143px;
     margin-bottom: 0;
-    margin-left: 35%;
 }
 
 .sitetitle {
@@ -20,17 +35,14 @@
     font-family: "Jolly Lodger", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-top: 10px;
     margin-bottom: 0%;
     text-align: center;
+    margin-top: 8px;
 }
 
 /*The Search Container*/
 .search-container {
-    margin-left: 10%;
-    margin-top: 40px;
-    margin-bottom: 5%;
-
+    margin: 16px 0;
 }
 
 .search-box {
@@ -51,332 +63,49 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    }
-.new-page-link{
-    margin-left: 45%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    text-decoration: none;
-}
-.newpage{
-    margin-top: 0%;
-    margin-right:40%;
-    color: #000000;
-    margin-bottom:0%;
 }
 
-.random-page-link{
-    margin-left: 45%;
-    margin-top: 5%;
-    margin-bottom: 0;
-    text-decoration: none;
-}
-.random-page-link img:hover{
-    transform: scale(1.1)
-}
-.randompage{
-    margin-top: 0%;
-    margin-right: 40%;
-    color: black;
-}
-
-    /*adding a sticky note*/
-.sticky-note {
-    position: relative; /* Make it relative for absolute positioning of pseudo-elements */
-    border: 2px solid #ffcc00; /* Yellow border */
-    background-color: #ffff99; /* Light yellow background */
-    width: 10%; /* Adjust width as needed */
-    margin: 20px auto; /* Center the sticky note horizontally */
-    padding: 20px; /* Padding inside the sticky note */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 16px; /* Adjust text size as needed */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    text-align: center; /* Center-align the text */
-    line-height: 1.5; /* Adjust line height for spacing */
-    overflow: hidden; /* Hide overflow content */
-    font-family: "Single Day", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/*Controlling the image*/
-.category-item img {
-    width: 39px;
-    height:44 ;
-    margin-right: 10px;
- }
-
- .category-item span {
-    font-size: 16px; /* Adjust text size as needed */
-    text-decoration: none;
-    color: blue;
- }
- .category-item p{
-    font-size: 12px;
-    text-align: center;
-    margin-top: 0;
- }
-
- /*Adding Cards*/
- .post-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-}
-
-/*Tablet*/
-@media only screen and (min-width: 601px) and (max-width: 1100px){
-    /* Styling The Header components*/
-.header {
+.new-page-links-wrapper{
     display: flex;
-    display: block;
 }
 
-.sitelogo {
-    max-width: 240px; /* Adjust max-width as needed */
-    height: 143px;
-    margin-bottom: 0;
-    margin-left: 40%;
-}
-
-.sitetitle {
-    font-size: 38px;
-    font-family: "Jolly Lodger", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    text-align: center;
-}
-
-/*The Search Container*/
-.search-container {
-    margin-left: 10%;
-    margin-top: 40px;
-
-}
-
-.search-box {
-    width: 200px; /* Adjust width as needed */
-    padding: 20px;
-    border: 1px solid #00FFE0;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-left: 180px;
-}
-
-.search-button {
-    padding: 20px 20px;
-    background-color: #00c3ff; /* Change color as needed */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    }
-
-.new-page-link{
-    margin-left: 45%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    text-decoration: none;
-    margin-right: 0px;
-}
-.newpage{
-    margin-top: 0%;
-    margin-right:40%;
-    color: #000000;
-    margin-bottom:0%;
-}
-
-.random-page-link{
-    margin-left: 45%;
-    margin-top: 5%;
-    margin-bottom: 0;
-    text-decoration: none;
-}
-.random-page-link img:hover{
-    transform: scale(1.1)
-}
-.randompage{
-    margin-top: 0%;
-    margin-right: 40%;
-    color: black;
-}
-
-
-    /*adding a sticky note*/
-.sticky-note {
-    position: relative; /* Make it relative for absolute positioning of pseudo-elements */
-    border: 2px solid #ffcc00; /* Yellow border */
-    background-color: #ffff99; /* Light yellow background */
-    width: 10%; /* Adjust width as needed */
-    margin: 20px auto; /* Center the sticky note horizontally */
-    padding: 20px; /* Padding inside the sticky note */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 16px; /* Adjust text size as needed */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    text-align: center; /* Center-align the text */
-    line-height: 1.5; /* Adjust line height for spacing */
-    overflow: hidden; /* Hide overflow content */
-    font-family: "Single Day", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/*Controlling the image*/
-.category-item img {
-    width: 39px;
-    height:44 ;
-    margin-right: 10px;
- }
-
- .category-item span {
-    font-size: 16px; /* Adjust text size as needed */
-    text-decoration: none;
-    color: blue;
- }
- .category-item p{
-    font-size: 12px;
-    text-align: center;
-    margin-top: 0;
- }
-
- /*Adding Cards*/
- .post-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-}
-
-@media only screen and (min-width:1101px) and (max-width:1900px){
-    /* Styling The Header components*/
-.header {
+.new-page-links-wrapper a{
     display: flex;
-    display: block;
+    gap: 4px;
+    padding: 4px 8px;
 }
 
-.sitelogo {
-    max-width: 240px; /* Adjust max-width as needed */
-    height: 143px;
-    margin-bottom: 0;
-    margin-left: 40%;
+.new-page-links-wrapper a:hover{
+    background-color: lightcyan;
+    border-radius: 10px;
 }
 
-.sitetitle {
-    font-size: 38px;
-    font-family: "Jolly Lodger", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    text-align: center;
-}
-
-/*The Search Container*/
-.search-container {
-    margin-left: 20%;
-    margin-top: 40px;
-    margin-bottom: 30px;
-
-}
-
-.search-box {
-    width: 200px; /* Adjust width as needed */
-    padding: 20px;
-    border: 1px solid #00FFE0;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-left: 180px;
-}
-
-.search-button {
-    padding: 20px 20px;
-    background-color: #00c3ff; /* Change color as needed */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    }
-
-.new-page-link{
-    margin-left: 50%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    text-decoration: none;
-    margin-right: 0px;
-}
-.newpage{
-    margin-top: 0%;
-    margin-right:42%;
-    color: #000000;
-    margin-bottom:0%;
-}
 
 .random-page-link{
-    margin-left: 50%;
-    margin-top: 5%;
     margin-bottom: 0;
-    text-decoration: none;
 }
+
 .random-page-link img:hover{
     transform: scale(1.1)
 }
-.randompage{
-    margin-top: 0%;
-    margin-right: 40%;
-    color: black;
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    margin: 8px 24px;
+}
+
+.categories .category-item:hover{
+    background-color: lightcyan;
 }
 
 
-
-    /*adding a sticky note*/
-.sticky-note {
-    position: relative; /* Make it relative for absolute positioning of pseudo-elements */
-    border: 2px solid #ffcc00; /* Yellow border */
-    background-color: #ffff99; /* Light yellow background */
-    width: 10%; /* Adjust width as needed */
-    margin: 20px auto; /* Center the sticky note horizontally */
-    padding: 20px; /* Padding inside the sticky note */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 16px; /* Adjust text size as needed */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    text-align: center; /* Center-align the text */
-    line-height: 1.5; /* Adjust line height for spacing */
-    overflow: hidden; /* Hide overflow content */
-    font-family: "Single Day", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/*Controlling the image*/
-.category-item img {
-    width: 39px;
-    height:44 ;
-    margin-right: 10px;
- }
-
- .category-item span {
-    font-size: 16px; /* Adjust text size as needed */
-    text-decoration: none;
-    color: blue;
- }
- .category-item p{
-    font-size: 12px;
-    text-align: center;
-    margin-top: 0;
- }
-
- /*Adding Cards*/
+@media only screen and (max-width: 600px){
+/*Controlling the grid*/
  .post-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
+    }
 }
